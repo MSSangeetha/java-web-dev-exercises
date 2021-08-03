@@ -1,5 +1,8 @@
 package org.launchcode.java.studios.chapterthree;
 
+import java.io.BufferedReader;
+import java.io.File;
+import java.io.FileReader;
 import java.util.*;
 
 public class CountingCharacters {
@@ -10,6 +13,7 @@ public class CountingCharacters {
         String userSentance = input.nextLine();
         //Remove the non alphabetic characters and coverts them to lowercase
         userSentance = userSentance.replaceAll("[^a-zA-Z]", "").toLowerCase();
+        //also can use Character.isLetter(Stringname)
         int count =0;
 //        System.out.println(sentance.charAt(1));
 
@@ -34,6 +38,14 @@ public class CountingCharacters {
             System.out.println(student.getKey() + ": " + student.getValue());
 
         }
+
+        //Super Bonus
+        //Reading String from a File
+        File file = new File("C:\\Users\\sibis\\Desktop\\java-practice\\test.txt");
+//        BufferedReader br = new BufferedReader(new FileReader(file));
+//        String st;
+//        while ((st = br.readLine()) != null)
+//            System.out.println(st);
 
         //Looping through the String
 //        for (int i = 0; i < sentance.length(); i ++) {

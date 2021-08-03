@@ -8,7 +8,7 @@ public class ChapterTwoArrayList {
     public static void main(String[] args) {
         ArrayList<Integer> numbers = new ArrayList<>(Arrays.asList(1,2,3,4,5,6,7,8,9,10));
         ArrayList<String> words = new ArrayList<>(Arrays.asList("Louis","London","America","Apple","Beard"));
-//        numbers.add(1);
+//        numbers.add(1);   
 //        numbers.add(2);
 //        numbers.add(3);
 //        numbers.add(4);

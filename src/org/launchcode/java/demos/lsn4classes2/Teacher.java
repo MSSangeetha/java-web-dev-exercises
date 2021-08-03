@@ -1,11 +1,14 @@
 package org.launchcode.java.demos.lsn4classes2;
 
+import java.util.Objects;
+
 public class Teacher {
     private String firstName;
     private String lastName;
     private String subject;
     private int yearsTeaching;
 
+    //Constructors
     public Teacher(String firstName, String lastName, String subject, int yearsTeaching) {
         this.firstName = firstName;
         this.lastName = lastName;
@@ -13,6 +16,20 @@ public class Teacher {
         this.yearsTeaching = yearsTeaching;
     }
 
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+        Teacher teacher = (Teacher) o;
+        return Objects.equals(firstName, teacher.firstName) && Objects.equals(lastName, teacher.lastName);
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(firstName, lastName);
+    }
+
+    //Getters and Setters
     public void setFirstName(String firstName) {
         this.firstName = firstName;
     }
