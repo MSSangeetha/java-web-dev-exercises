@@ -13,6 +13,10 @@ public class Cat {
         weight = aWeight;
     }
 
+    public Cat () {
+        weight = 13;
+    }
+
     /**** Getters and Setters ****/
 
     public boolean isTired() {
@@ -61,6 +65,8 @@ public class Cat {
 
         hungry = false;
     }
+
+//    public abstract String noise();
 
     public String noise () {
         return "Meeeeeeooooowww!";
