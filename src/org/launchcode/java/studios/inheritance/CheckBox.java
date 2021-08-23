@@ -31,4 +31,9 @@ public class CheckBox extends Question{
     }
 
     //override getactualanswer from question class
+
+    @Override
+    public String getActualAnswer() {
+        return null;
+    }
 }

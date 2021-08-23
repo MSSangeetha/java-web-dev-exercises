@@ -16,6 +16,9 @@ public abstract class Question {
         this.question = question;
     }
 
+    //Abstract methods
+    public abstract String getActualAnswer();
+
     //Getters and Setters
 
     public String getQuestion() {
